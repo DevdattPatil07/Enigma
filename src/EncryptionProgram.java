@@ -83,6 +83,9 @@ public class EncryptionProgram {
                 if(temp<32){
                     temp=127-32+temp;
                 }
+                if(temp<32){
+                    temp=127+temp;
+                }
                 messageToEncrypt.setCharAt(i,(char)temp);
             }
         } else{
@@ -98,6 +101,9 @@ public class EncryptionProgram {
                 }
                 if(temp<32){
                     temp=127-32+temp;
+                }
+                if(temp<32){
+                    temp=127+temp;
                 }
                 messageToEncrypt.setCharAt(i,(char)temp);
             }
@@ -145,6 +151,9 @@ public class EncryptionProgram {
                 if(temp<32){
                     temp=127-32+temp;
                 }
+                if(temp<32){
+                    temp=127+temp;
+                }
                 messageToDecrypt.setCharAt(i,(char)temp);
             }
         } else{
@@ -160,6 +169,9 @@ public class EncryptionProgram {
                 }
                 if(temp<32){
                     temp=127-32+temp;
+                }
+                if(temp<32){
+                    temp=127+temp;
                 }
                 messageToDecrypt.setCharAt(i,(char)temp);
             }
